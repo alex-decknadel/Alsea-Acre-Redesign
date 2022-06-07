@@ -1,0 +1,315 @@
+img, embed, object, video {
+	max-width: 100%;
+}
+
+@media screen and (max-width: 520px) {
+	/* Example embedded Media Query */ 
+}
+
+.outerwrap {
+	width: 100%;
+	display: block;
+	clear: both;
+}
+
+.innerwrap {
+	width: 95%;
+	max-width: 1105px;  /* Modified width to match design */
+	margin: 0 auto;
+	display: block;
+}
+
+body {
+    background-color: #f4e2d1;
+}
+
+header {
+    /* The <header> already have the outerwrap styes applied to it */
+    background-color: #630618;
+}
+
+header div {
+    /* The <div> inside <header> already has the innerwrap styles applied, limiting its
+      width and centering the element on the page. The background image is therefore
+      constrained to the area shown. */ 
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/228208/hero_image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 622px;  
+}
+
+header div h1 {
+    /* Where the magic happens - the <h1> is forced a specific width and height, and
+      floated to the left with a margin of 70px to push it away from the left side. */
+    background-color: #630618;
+    width: 260px;
+    height: 146px;
+    padding-top: 45px;
+    border-radius: 0 0 35px 35px;
+    text-align: center; 
+    
+    float: left;         /* Magic! */
+    margin-left: 70px;   /* Push away from left side */
+}
+
+header div h1 span {
+    display: none;      /* Hide the text from browsers */
+}
+
+header div nav {
+    background-color: rgba(100, 7, 25, 0.75);  /* Semi-transparent background color */
+    height: 120px;     /* Other part of the magic - forces the transparent color to a specific height */
+    padding-top: 75px;
+}
+
+header div nav ul {
+    /* Starter code for the navigation */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2.408em;
+}
+
+header div nav ul li {
+    margin-left: .791em;
+}
+
+header div nav ul li a {
+    text-decoration: none;
+    color: rgba(244, 226, 209, 1);
+    border-bottom: 3px solid rgba(100, 7, 25, 0);
+    transition: .2s all ease;
+    
+    font-size: 1.125em;
+    font-family: "Museo-Slab", Verdana, Helvetica, Arial, sans-serif;
+    color: rgb(244, 226, 209);
+    font-weight: 500;
+}
+
+header div nav ul li a:hover {
+    border-bottom: 3px solid #808775;
+}
+
+article div.outerwrap {
+	margin-top: 90px;
+}
+
+article h1 {	
+    font-family: "Museo-Slab", Verdana, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 3.541em;
+    color: rgb(99, 6, 24);
+    font-weight: 500;
+    border-top: 4px solid #c2b9a0;
+    padding-left: 160px;
+    margin-bottom: 1.888em;
+}
+
+article h1 span {
+    margin-top: -.52em;
+	position: absolute;
+	background-color: #f4e2d1;
+	padding: 0 .4em;
+}
+
+nav {
+	font-size: 1.125em;
+	font-family: "Museo-Slab", Verdana, Helvetica, Arial, sans-serif;
+	color: rgb(244, 226, 209);
+	font-weight: 500;
+	background-color: #630618;
+}
+
+article h3 {
+	font-size: 2.5em;
+	font-family: "Museo-Slab", Verdana, Helvetica, Arial, sans-serif;
+	color: rgb(99, 6, 24);
+	font-weight: 500;
+    text-transform: uppercase;
+}
+
+#about, #news {
+	background-color: #c2b9a0;
+}
+
+section.innerwrap  {
+    display: flex;
+}
+
+#about section.innerwrap {
+    height: 420px;
+    justify-content: center;
+    padding-top: 29px;
+}
+
+#about section.innerwrap p {
+    width: 21.875em;
+    margin-left: .916em;
+    font-size: 1.5em;
+	font-family: "Museo-Sans", Verdana, Helvetica, Arial, sans-serif;
+	color: black;
+    margin-top: .575em;
+}
+
+#about section.innerwrap h3 {
+    margin-left: .55em;
+    margin-top: 2.15em;
+}
+
+#about img {
+    width: 399px;
+    height: 300px; 
+}
+
+#products {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#products img {
+    height: 233px;
+}
+
+section.product {
+    flex: 0 0 473px;
+    height: 863px;
+}
+
+section.product p {
+	font-size: 1.125em;
+    font-family: "Museo-Sans", Verdana, Helvetica, Arial, sans-serif;
+    color: black;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+section.product p em {
+	font-size: 1.5em;
+	font-family: "Museo-Sans", Verdana, Helvetica, Arial, sans-serif;
+	color: black;
+	font-weight: 500;
+}
+
+section.product p a {
+	font-size: 1.8125em;
+    font-family: "Museo-Slab", Verdana, Helvetica, Arial, sans-serif;
+    color: rgb(244, 226, 209);
+    font-weight: 700;
+    background-color: #630618;
+    text-decoration: none;
+    padding: 27px 98px 27px 142px;
+    border-radius: 14px;
+}
+
+#fromage {
+    display: flex;
+    flex-direction: column;
+}
+
+#fromage h3 {
+    margin-top: 1.375em;
+}
+
+#fromage p:nth-child(3) {
+    margin-top: 1.111em;
+}
+
+#fromage p:nth-child(4) {
+    margin-top: 3.917em;
+}
+
+#fromage p:nth-child(5) {
+    margin-top: 3.555em;
+
+}
+
+#jars {
+    display: flex;
+    flex-direction: column;
+}
+
+#jars h3 {
+    margin-top: 1.35em;
+}
+
+#jars p:nth-child(3) {
+    margin-top: 1.111em;
+}
+
+#jars p:nth-child(4) {
+    margin-top: 2.833em;
+}
+
+#jars p:nth-child(5) {
+    margin-top: 3.555em;
+}
+
+#news section.innerwrap img {
+    width: 681px;
+    height: 385px;
+}
+
+h4 {
+	font-size: 1.4375em;
+	font-family: "Museo-Slab", Verdana, Helvetica, Arial, sans-serif;
+	color: rgb(99, 6, 24);
+	font-weight: 500;
+    text-transform: uppercase;
+    width: 17em;
+}
+
+#news section.innerwrap p {
+	font-size: 1.125em;
+	font-family: "Museo-Sans", Verdana, Helvetica, Arial, sans-serif;
+	color: black;
+	font-weight: 300;
+    width: 19.222em;
+    margin-top: 1.277em;
+}
+
+#news section.innerwrap div:nth-child(2) {
+    margin: 30px 0 0 30px;
+}
+
+footer {
+    background-color: #630618;
+}
+
+footer.outerwrap div.innerwrap {
+	font-size: 1.125em;
+	font-family: "Museo-Slab", Verdana, Helvetica, Arial, sans-serif;
+	color: rgb(244, 226, 209);
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+}
+
+#social, #contact {
+    margin-bottom: 2.055em;
+}
+
+#social {
+    margin-top: 2.888em;
+    margin-left: 3%;
+}
+
+#social ul {
+    display: flex;
+}
+
+#social ul li {
+    margin: 12px 21px;
+}
+
+#contact {
+    margin-top: 2.333em;
+    line-height: 1.5em;
+}
+
+#contact p:nth-child(1) {
+    text-transform: uppercase;
+}
+
+#contact p em {
+    font-style: italic;
+}
